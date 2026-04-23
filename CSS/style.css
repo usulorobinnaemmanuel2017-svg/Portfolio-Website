@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size:large;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* NAV */
+
+header {
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #0A2540;
+  color: white;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.logo span {
+    background-color: blue; 
+    color: green;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 2rem; 
+    width: 2rem;
+    height: 2rem; 
+}
+
+div span {
+  font-weight: 600;
+  padding: 2px 6px;
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: gold;
+  justify-content: center; 
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 60vh;
+  display: flex;
+  background-image: url(/Images/software\ engr.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero div a {
+  color: white;
+  border: 2px;
+  border-radius: 30px;
+}
+
+.btn {
+  background: green;
+  color: #00A8E8;
+  padding: 10px 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.btn:hover {
+  transition: all 0.5s  ease-in-out;
+  background-color: blueviolet;
+  color: blanchedalmond;
+  scale: 1.2;
+}
+.btn:active {
+  transform: translateY(5px);
+}
+
+/* SECTIONS */
+section {
+  padding: 20px;
+}
+
+/* ABOUT */
+.about-grid{
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.about-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-grid img {
+  margin-bottom: 2rem;
+  width: 30%;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-grid div > p {
+margin: auto 2rem;
+  
+
+}
+/* SKILLS */
+.skills-grid {
+  padding: 20px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  background-color:coral
+}
+
+.skills-grid:hover {
+  transform: translateY(15%);
+  transition: all 0.15s  ease-in-out;
+  background-color: blueviolet;
+  color: rgba(red, green, blue, alpha)
+}
+
+.skills-grid:active {
+  transform: translateX-(5px);
+}
+
+
+/* PROJECTS */
+.projects-grid {
+  padding: 60px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 10px;
+}
+
+.projects-grid a {
+  color: rgb(from color r g b)
+}
+
+.projects-grid div:nth-child(1) {
+  background-image: url(/Images/man\ with\ travel\ documents.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  align-items: center;
+}
+
+.projects-grid div:nth-child(2) {
+  background-image: url(/Images/man\ with\ travel\ bags.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-weight: 700;
+}
+
+.projects-grid div:nth-child(3) {
+  background-color: bisque;
+  color: black;
+  font-weight: 600;
+}
+
+.projects-grid div:nth-child(4) {
+  background: greenyellow;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+/* CARD */
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY (-8px);
+}
+
+/* CONTACT */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+}
+
+button {
+  background: #0A2540;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  background: #0A2540;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .about-grid,
+  .skills-grid,
+  .projects-grid {
+  grid-template-columns: 1fr;
+  }
+}
