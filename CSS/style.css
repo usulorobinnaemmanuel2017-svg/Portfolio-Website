@@ -62,7 +62,7 @@ nav a {
 .hero {
   height: 60vh;
   display: flex;
-  background-image: url(/Images/software\ engr.png);
+  background-image: url(../Images/software\ engr.png);
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
